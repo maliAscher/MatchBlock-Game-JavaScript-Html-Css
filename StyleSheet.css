@@ -1,0 +1,350 @@
+﻿/* הסתרת הגלילה */
+.hide-scroll::-webkit-scrollbar {
+    display:none;
+  }
+  .hide-scroll {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  }
+/* עיצוב הגוף בכל הדפים */
+  body {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* עיצוב גוף הדף של הדף בית */
+.body1 {  
+    background-image: url('./תמונות/image\ \(64\).png');
+    margin: 0;
+    padding:0;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-size: auto;
+    background-position:center center;
+    background-size: 100% 100%;
+}
+/* אחראי לשקיפות של חלונית ההוראות */
+#info {
+ position: absolute;
+ top: 0px;
+ right: 0px;
+ left: 0px;
+ bottom: 0px;
+ background-color: rgba(0, 0, 0, 0.5);
+ z-index: 9;
+ display: none;
+}
+/* תמונת הוראות */
+#info img {
+ height: 80vh;
+ float: unset;
+ margin: auto;
+ left: 25vw;
+ top: 12vh;
+ position: absolute;
+}
+/* כפתור הוראות */
+.menu{
+ width:6vw;
+ height:11vh;   
+ top:3vh;
+ margin-left: 15vh;
+ position:absolute;
+}
+/* כפתור האיקס */
+#closeinfo {
+ background-image: url('./תמונות/image\ \(76\).png');
+ border-style: solid;
+  border-width: 8px;
+  border-color: white;
+ background-size: 97% 101%;
+ background-color:rgba(244, 234, 234, 0);
+ border-radius: 10%;
+ left: 73vw;
+ top: 10vh;
+ width: 4%;
+ height: 8%; 
+ background-repeat:no-repeat;
+ position:absolute;
+}
+/* כתב ההכנס שם */
+.h1{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* עיצוב כפתור הפעלה */
+.circular--landscape { 
+    display: inline-block; 
+    position: relative; 
+    width: 170px; 
+    height: 170px; 
+    overflow: hidden; 
+    border-radius: 50%;
+    margin-left: 46%;
+    margin-right: 54%;
+    margin-top: 37%;
+    
+ }
+ .circular--landscape img { 
+    width: auto; 
+    height: 100%; 
+    margin-left: -50px; 
+    animation: spin 2s linear infinite; 
+}
+ /*  שורות ועמודות עיצוב הטבלה */
+table {
+    width: 80%;
+    height: 94vh;
+    margin: auto;
+    border-radius: 1%;
+    border: 0;
+    box-shadow: -7px -2px 19px 15px rgba(255, 255, 255, 0.36);
+}
+td {
+    height:3%;
+    width: 5%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+/* עיצוב הבלוקים של המשחק */
+button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow: -6px 9px 18px 7px rgba(0,0,0,0.86);
+    border-radius: 10%;
+    border: 0.8px solid;
+}
+/* עיצוב דף הרמות והפרטים */
+.information{
+  background: url('./תמונות/levels.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* עיצוב כפתור רמות */
+.levels{
+    width: 55vh;
+    height: 20%; 
+    padding :0% ;
+}
+
+.about{
+    background-size: 45% auto;
+    background-repeat: no-repeat;
+    width: 45%;
+    
+}
+
+.game{
+    background-image: url('./תמונות/רקע\ משחק.png');
+    margin: 0;
+    padding:0;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+}
+.color_1{    
+    background-image: url('./תמונות/color2.png');
+}
+.color_2{
+    background-image: url('./תמונות/color5.png');
+}
+
+.color_3 {
+    background-image: url('./תמונות/color3.png');
+}
+.color_4{ 
+    background-image: url('./תמונות/color4.png');
+}
+.color_5{   
+    background-image: url('./תמונות/color1.png');
+}
+
+
+.opac{
+    opacity:0.4;
+}
+
+/* עיצוב הכפתורים בהודעת סיכום */
+.endMassege{
+    width: 26%;
+    height: 12%;
+    border-radius: 30%;
+}
+
+.links {
+    
+    height: 50vh;
+    cursor: pointer;
+}
+.links:hover,.continue:hover {
+    opacity: 0.4;
+
+}
+span {
+   font-size:300%
+}
+
+p{
+   font-size:300%; 
+   text-align:center;
+   color:black;
+   font-weight:900;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* עיצוב הכפתור של חזרה לדף הבית */
+.home{
+    margin-top: 10%;
+    margin-left: 65%;
+    width: 60%;
+    height: 60%;
+}
+.exit{
+    margin-right: 40%;
+    width: 50%;
+    height: 50%;
+}
+/* עיצוב הנקודות */
+#sum {
+    width:12%;
+    height: 15%;
+    margin-left: 75vw;
+    margin-top: 4vh;
+    padding-left: 2%;
+    border-radius:28%;
+    display: block;
+    font-weight: 900;
+    font-size: 423%;
+    font-weight: 900;
+    font-family: cursive;
+    border: 5px solid #ff428a;
+}
+/* צבע הקוביה של הסכום */
+#endd, #sum {
+    background-color: #faf3f9;
+}
+ #endd {
+    border-radius: 15vh; 
+     width: 10%;
+    height: 80%;
+    margin-left: 4vw;
+    margin-top: -9vh;
+}
+
+#inputs
+{ 
+ box-shadow:none;
+    position:unset;
+    float:unset;
+}
+/* חלונית של ההודעת סיום */
+ .modal-box {
+    display: none; 
+     position: absolute; 
+     box-shadow: -6px 9px 18px 7px rgba(232, 66, 121, 0.86);
+    -webkit-animation-name: animatetop2;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-fill-mode: forwards;
+     float: right; 
+     text-align:center;
+}  
+/* חלונית של הסכום במשחק */
+ .modal-box-sum {
+    display: none;
+    position: absolute;
+    box-shadow: -6px 9px 18px 7px rgba(232, 66, 121, 0.86);
+    -webkit-animation-name: animatetop2;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-fill-mode: forwards;
+    float: right;
+    text-align:center;
+} 
+@-webkit-keyframes animatetop2 {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 200px;
+        opacity: 1;
+    }
+}
+/* גודל הטיימר */
+#out {
+    width: 20%;
+    height: 90vh;
+}
+/* הזמן */
+#in {
+    width: 100%;
+    height: 100%;
+    background-image: url('./תמונות/time.png');
+    box-shadow: -6px 8px 28px -2px rgba(0,0,0,0.86);
+}
+.game-wrapper{
+    display: block;
+}
+
+.seperate-wrapper{
+    display: inline-block;
+}
+.seperate{
+    margin: auto;
+}
+.left, .right{
+    width: 20%;
+}
+.right{
+    float: right;
+}
+.center{
+    width: 50%;
+    margin-top:2vh;
+}
+#first{
+    margin-top:20vh;
+}
+
+.pp {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 400%;
+    font-weight: bolder;
+    margin-top:1.5vh;
+}
+#s1{
+    margin:0;
+}
+/* תיבת הקלט-הכנסת שם */
+input {
+    height: 3vh;
+    width: 14vw;
+    border: 14px solid transparent;
+    border-image: url('תיבת קלט.png') 19%;
+    font-size: x-large;
+    text-align: center;
+    outline:none;
+}
+
+/* עיצוב צורת הבלוקים */
+button{
+
+    font-size: 25px;
+    display: inline-block;
+    padding: 1vh  2vh;
+    border-radius:  200vw;
+    margin-top: 0px;
+}
+/* שקיפות כשעובר על הבלוק */
+button:hover {
+    opacity: 0.8;
+  }  
+ 
+  
